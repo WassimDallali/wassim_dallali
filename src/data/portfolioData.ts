@@ -8,7 +8,7 @@ export const portfolioData: PortfolioData = {
       email: 'wassimdallali7@gmail.com',
       phone: '+216 53 788 671',
       location: 'Sfax, Tunisia',
-      portfolio: 'https://wassimdallali.netlify.app',
+      portfolio: 'https://wassim-dallali.netlify.app',
       linkedin: 'https://linkedin.com/in/wassim-dallali',
       github: 'https://github.com/WassimDallali',
     },

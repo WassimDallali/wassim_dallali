@@ -11,7 +11,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary-50 via-white to-primary-100">
+    <section id="hero" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary-50 via-white to-primary-100" aria-label="Hero section">
       <div className="container-max section-padding text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -23,6 +23,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
+            itemProp="name"
           >
             {portfolioData.personal.name}
           </motion.h1>
@@ -32,6 +33,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
+            itemProp="jobTitle"
           >
             {portfolioData.personal.title}
           </motion.p>

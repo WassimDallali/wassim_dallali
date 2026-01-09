@@ -8,6 +8,7 @@ import Education from './components/Education';
 import Awards from './components/Awards';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import SEO from './components/SEO';
 
 function App() {
   const [activeSection, setActiveSection] = useState('');
@@ -34,19 +35,22 @@ function App() {
   }, []);
 
   return (
-    <div className="min-h-screen">
-      <Header activeSection={activeSection} />
-      <main>
-        <Hero />
-        <About />
-        <Skills />
-        <Experience />
-        <Education />
-        <Awards />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
+    <>
+      <SEO />
+      <div className="min-h-screen">
+        <Header activeSection={activeSection} />
+        <main>
+          <Hero />
+          <About />
+          <Skills />
+          <Experience />
+          <Education />
+          <Awards />
+          <Contact />
+        </main>
+        <Footer />
+      </div>
+    </>
   );
 }
 

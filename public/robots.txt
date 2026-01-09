@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://wassim-dallali.netlify.app/sitemap.xml
+
