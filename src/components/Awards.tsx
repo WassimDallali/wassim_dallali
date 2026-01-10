@@ -43,9 +43,10 @@ const Awards = () => {
                       href={award.link}
                       target="_blank"
                       rel="noopener noreferrer"
+                      
                       className="inline-flex items-center text-primary-600 hover:text-primary-700 font-semibold transition-colors"
                     >
-                      Learn More <FaExternalLinkAlt className="ml-2" />
+                        Learn More About the Space Apps Challenge <FaExternalLinkAlt className="ml-2" />
                     </a>
                   )}
                 </div>
