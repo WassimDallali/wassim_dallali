@@ -50,10 +50,11 @@ const Contact = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Get In Touch</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Contact {portfolioData.personal.name}</h2>
           <div className="w-24 h-1 bg-primary-600 mx-auto mb-4"></div>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology.
+            Get in touch with <strong>{portfolioData.personal.name}</strong>. {portfolioData.personal.name.split(' ')[0]} is always open to discussing new opportunities, 
+            interesting projects, or just having a chat about technology and software development.
           </p>
         </motion.div>
 

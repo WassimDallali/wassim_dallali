@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import { portfolioData } from '../data/portfolioData';
 
 interface HeaderProps {
   activeSection: string;
@@ -46,8 +47,10 @@ const Header = ({ activeSection }: HeaderProps) => {
           <button
             onClick={() => scrollToSection('hero')}
             className="text-2xl font-bold text-primary-600 hover:text-primary-700 transition-colors"
+            aria-label={`${portfolioData.personal.name} Portfolio Home`}
           >
-            WD
+            <span className="sr-only">{portfolioData.personal.name}</span>
+            <span aria-hidden="true">WD</span>
           </button>
 
           {/* Desktop Navigation */}

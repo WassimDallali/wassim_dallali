@@ -9,6 +9,7 @@ import Awards from './components/Awards';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import SEO from './components/SEO';
+import SEOContent from './components/SEOContent';
 
 function App() {
   const [activeSection, setActiveSection] = useState('');
@@ -37,6 +38,7 @@ function App() {
   return (
     <>
       <SEO />
+      <SEOContent />
       <div className="min-h-screen">
         <Header activeSection={activeSection} />
         <main>

@@ -44,8 +44,12 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.6 }}
           >
-            {portfolioData.personal.profile}
+            Welcome to {portfolioData.personal.name}'s portfolio. {portfolioData.personal.profile}
           </motion.p>
+          
+          {/* SEO: Additional name mention for search engines */}
+          <meta name="author" content={portfolioData.personal.name} />
+          <meta name="copyright" content={portfolioData.personal.name} />
 
           <motion.div
             className="flex flex-col sm:flex-row gap-4 justify-center items-center"

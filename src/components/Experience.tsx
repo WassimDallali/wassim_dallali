@@ -18,6 +18,9 @@ const Experience = () => {
         </motion.div>
 
         <div className="max-w-4xl mx-auto">
+          <p className="text-center text-gray-600 mb-8 text-lg">
+            {portfolioData.personal.name} has extensive professional experience in software development and DevOps.
+          </p>
           {portfolioData.experience.map((exp, index) => (
             <motion.article
               key={index}

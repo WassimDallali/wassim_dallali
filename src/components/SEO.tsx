@@ -21,14 +21,21 @@ const SEO = () => {
     script.text = JSON.stringify({
       '@context': 'https://schema.org',
       '@type': 'Person',
+      '@id': portfolioData.personal.contact.portfolio,
       name: portfolioData.personal.name,
+      alternateName: [
+        `${portfolioData.personal.name} Developer`,
+        `${portfolioData.personal.name} Full Stack Developer`,
+        `${portfolioData.personal.name} Sfax`,
+      ],
       jobTitle: portfolioData.personal.title,
-      description: portfolioData.personal.profile,
+      description: `${portfolioData.personal.name} is a ${portfolioData.personal.title} based in ${portfolioData.personal.contact.location}. ${portfolioData.personal.profile}`,
       email: portfolioData.personal.contact.email,
       telephone: portfolioData.personal.contact.phone,
       address: {
         '@type': 'PostalAddress',
         addressLocality: 'Sfax',
+        addressRegion: 'Sfax',
         addressCountry: 'TN',
       },
       url: portfolioData.personal.contact.portfolio,
@@ -71,6 +78,10 @@ const SEO = () => {
         startDate: exp.startDate,
         endDate: exp.endDate === 'Present' ? undefined : exp.endDate,
       })),
+      mainEntityOfPage: {
+        '@type': 'WebPage',
+        '@id': portfolioData.personal.contact.portfolio,
+      },
     });
 
     // Remove existing structured data script if any
