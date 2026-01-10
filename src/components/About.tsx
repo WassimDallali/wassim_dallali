@@ -14,15 +14,16 @@ const About = () => {
           itemScope
           itemType="https://schema.org/Person"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">About Me</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">About {portfolioData.personal.name}</h2>
           <div className="w-24 h-1 bg-primary-600 mx-auto mb-8" aria-hidden="true"></div>
           <p className="text-lg text-gray-700 leading-relaxed" itemProp="description">
-            {portfolioData.personal.profile}
+            {portfolioData.personal.name} is a {portfolioData.personal.profile.toLowerCase()}
           </p>
           <p className="text-lg text-gray-700 leading-relaxed mt-4">
-            I'm passionate about creating innovative solutions and continuously learning new technologies 
-            to stay at the forefront of software development. My experience spans from full-stack web 
-            development to mobile applications and cloud infrastructure.
+            {portfolioData.personal.name} is passionate about creating innovative solutions and continuously learning new technologies 
+            to stay at the forefront of software development. With experience spanning from full-stack web 
+            development to mobile applications and cloud infrastructure, {portfolioData.personal.name.split(' ')[0]} brings a comprehensive 
+            skill set to every project.
           </p>
         </motion.article>
       </div>

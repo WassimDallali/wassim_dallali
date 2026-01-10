@@ -89,6 +89,9 @@ const Footer = () => {
           <p className="text-sm">
             &copy; {new Date().getFullYear()} {portfolioData.personal.name}. All rights reserved.
           </p>
+          <p className="text-xs text-gray-500 mt-2">
+            {portfolioData.personal.name} - {portfolioData.personal.title} | {portfolioData.personal.contact.location}
+          </p>
         </div>
       </div>
     </footer>

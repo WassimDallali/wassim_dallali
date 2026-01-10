@@ -4,14 +4,14 @@ import { portfolioData } from '../data/portfolioData';
 const SEO = () => {
   useEffect(() => {
     // Update document title
-    document.title = `${portfolioData.personal.name} - ${portfolioData.personal.title} | React, TypeScript, DevOps Expert`;
+    document.title = `${portfolioData.personal.name} - ${portfolioData.personal.title} Portfolio | React, TypeScript, DevOps Expert in ${portfolioData.personal.contact.location.split(',')[0]}`;
 
     // Update meta description
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
       metaDescription.setAttribute(
         'content',
-        `Full Stack Developer with expertise in React, TypeScript, Node.js, and Cloud Computing. Experience in web and mobile development, DevOps, and network design. Based in ${portfolioData.personal.contact.location}.`
+        `${portfolioData.personal.name} is a ${portfolioData.personal.title} based in ${portfolioData.personal.contact.location}. Expert in React, TypeScript, Node.js, and Cloud Computing. Experience in web and mobile development, DevOps, and network design. ${portfolioData.awards.length > 0 ? `${portfolioData.awards[0].organization} ${portfolioData.awards[0].title}.` : ''}`
       );
     }
 
@@ -81,12 +81,33 @@ const SEO = () => {
 
     document.head.appendChild(script);
 
+    // Add BreadcrumbList structured data
+    const breadcrumbScript = document.createElement('script');
+    breadcrumbScript.type = 'application/ld+json';
+    breadcrumbScript.text = JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: 'Home',
+          item: portfolioData.personal.contact.portfolio,
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: portfolioData.personal.name,
+          item: `${portfolioData.personal.contact.portfolio}/#about`,
+        },
+      ],
+    });
+    document.head.appendChild(breadcrumbScript);
+
     return () => {
       // Cleanup
-      const scriptToRemove = document.querySelector('script[type="application/ld+json"]');
-      if (scriptToRemove) {
-        scriptToRemove.remove();
-      }
+      const scriptsToRemove = document.querySelectorAll('script[type="application/ld+json"]');
+      scriptsToRemove.forEach((script) => script.remove());
     };
   }, []);
 
