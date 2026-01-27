@@ -58,10 +58,10 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.8 }}
           >
             <button
-              onClick={() => scrollToSection('experience')}
+              onClick={() => scrollToSection('projects')}
               className="px-8 py-3 bg-primary-600 text-white rounded-lg font-semibold hover:bg-primary-700 transition-colors shadow-lg hover:shadow-xl"
             >
-              View Experience
+              View Projects
             </button>
             <button
               onClick={() => scrollToSection('contact')}

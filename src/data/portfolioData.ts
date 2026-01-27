@@ -97,6 +97,109 @@ export const portfolioData: PortfolioData = {
       endDate: '2022',
     },
   ],
+  projects: [
+    {
+      title: 'netflix-bot-exemple',
+      description:
+        'Exploratory Python project experimenting with automation and bot logic inspired by Netflix-style content browsing.',
+      technologies: ['Python', 'Automation'],
+      sourceCode: 'https://github.com/WassimDallali/netflix-bot-exemple',
+    },
+    {
+      title: 'wassim_dallali – Portfolio Source',
+      description:
+        'Source code for my personal portfolio website built with React, TypeScript, Vite and Tailwind CSS, showcasing my experience and projects.',
+      technologies: ['TypeScript', 'React', 'Vite', 'Tailwind CSS'],
+      sourceCode: 'https://github.com/WassimDallali/wassim_dallali',
+      highlight: true,
+    },
+    {
+      title: 'demo-properity-motion',
+      description:
+        'Animated property listing demo using React, TypeScript and motion libraries to showcase smooth UI interactions and transitions.',
+      technologies: ['TypeScript', 'React', 'Framer Motion'],
+      sourceCode: 'https://github.com/WassimDallali/demo-properity-motion',
+    },
+    {
+      title: 'Si_chikh',
+      description:
+        'Static website built with HTML and CSS for a local business, focusing on clean layout and responsive design.',
+      technologies: ['HTML', 'CSS'],
+      sourceCode: 'https://github.com/WassimDallali/Si_chikh',
+    },
+    {
+      title: 'GestionUtilisateur',
+      description:
+        'User management application implementing core CRUD operations and basic account management features.',
+      technologies: ['Java', 'CRUD', 'Persistence'],
+      sourceCode: 'https://github.com/WassimDallali/GestionUtilisateur',
+    },
+    {
+      title: 'WassimDallali – Profile README',
+      description:
+        'GitHub profile repository containing my developer README, badges and links to highlight my skills and activity.',
+      technologies: ['Markdown', 'GitHub'],
+      sourceCode: 'https://github.com/WassimDallali/WassimDallali',
+    },
+    {
+      title: 'Springboot-restful-reactjs',
+      description:
+        'Full-stack application using a Spring Boot RESTful backend with a modern React.js frontend, demonstrating clean API design and type-safe client integration.',
+      technologies: ['Spring Boot', 'REST API', 'React.js', 'TypeScript'],
+      sourceCode: 'https://github.com/WassimDallali/Springboot-restful-reactjs',
+      highlight: true,
+    },
+    {
+      title: 'Index_boolean – Boolean Search Engine',
+      description:
+        'A custom search engine implementing boolean indexing and retrieval, built to explore information retrieval concepts and efficient text search.',
+      technologies: ['Java', 'Algorithms', 'Indexing', 'Data Structures'],
+      sourceCode: 'https://github.com/WassimDallali/Index_boolean',
+      highlight: true,
+    },
+    {
+      title: 'Card-1 – UI Component',
+      description:
+        'A clean, modern card UI component built with HTML and CSS, focusing on layout, typography and responsive styling.',
+      technologies: ['HTML', 'CSS', 'UI Design'],
+      sourceCode: 'https://github.com/WassimDallali/Card-1',
+    },
+    {
+      title: 'navbar_reactjs-',
+      description:
+        'Reusable responsive navigation bar component built with React.js, showcasing component-based design and modern UI patterns.',
+      technologies: ['React.js', 'JavaScript', 'Responsive Design'],
+      sourceCode: 'https://github.com/WassimDallali/navbar_reactjs-',
+    },
+    {
+      title: 'AppCrudJee-',
+      description:
+        'A classic CRUD application built with JEE, focusing on clean architecture, data persistence and robust backend logic.',
+      technologies: ['Java', 'JEE', 'CRUD', 'SQL'],
+      sourceCode: 'https://github.com/WassimDallali/AppCrudJee-',
+    },
+    {
+      title: 'decidim (fork)',
+      description:
+        'Fork of the Decidim participatory democracy framework, used to study large-scale Ruby on Rails applications and civic-tech architectures.',
+      technologies: ['Ruby', 'Ruby on Rails'],
+      sourceCode: 'https://github.com/WassimDallali/decidim',
+    },
+    {
+      title: 'consul (fork)',
+      description:
+        'Fork of the Consul open government and e‑participation platform, explored for learning about complex civic engagement systems.',
+      technologies: ['Ruby', 'Ruby on Rails'],
+      sourceCode: 'https://github.com/WassimDallali/consul',
+    },
+    {
+      title: 'Portfolio & Experiments',
+      description:
+        'A collection of experiments, demos and learning projects exploring React, Node.js, cloud and DevOps practices.',
+      technologies: ['React', 'Node.js', 'Cloud', 'DevOps'],
+      sourceCode: 'https://github.com/WassimDallali',
+    },
+  ],
   awards: [
     {
       title: 'Global Finalist Honorable Mention',

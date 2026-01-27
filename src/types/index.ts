@@ -37,6 +37,15 @@ export interface Award {
   link?: string;
 }
 
+export interface Project {
+  title: string;
+  description: string;
+  technologies: string[];
+  link?: string; // live demo or page
+  sourceCode?: string; // GitHub repository
+  highlight?: boolean;
+}
+
 export interface PortfolioData {
   personal: {
     name: string;
@@ -48,6 +57,7 @@ export interface PortfolioData {
   experience: Experience[];
   education: Education[];
   awards: Award[];
+  projects: Project[];
 }
 
 
